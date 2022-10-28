@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "cursiva";
+    src: url("../fonts/Longhaul.woff");
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-family: "cursiva";
+}
+
+.contenedor{
+    margin: 3em 1em 1em 1em;
+    max-width: 1280px;
+
+}
+
+.barra{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-radius: 50px;
+    padding: 1em;
+    background: #d1e0ff;
+    box-shadow:  5px 5px 10px #b2bed9,
+                -5px -5px 10px #f0ffff;
+}
+
+h1{
+    margin-left: 1.1em;
+    color: rgb(32, 32, 32);
+    letter-spacing: 2px;
+
+}
+
+.boton-cargar{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #afc3e6, #d0e8ff);
+    box-shadow:  13px 13px 25px #9db0cf,
+                 -13px -13px 25px #e7ffff;    
+
+                 overflow: hidden;
+
+}
+
+.boton-cargar a{
+
+display: block;
+text-indent: 8000px;
+
+width: 50px;
+height: 50px;
+    background-image: url("../img/agregar.png");
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.boton-mostrar{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #afc3e6, #d0e8ff);
+    box-shadow:  13px 13px 25px #9db0cf,
+                 -13px -13px 25px #e7ffff;
+    
+                 overflow: hidden;
+
+
+}
+.boton-mostrar a{
+    display: block;
+    text-indent: 8000px;
+
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/expandir.png");
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.discos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.disco{
+    width:20em;
+    margin: 2em;
+    border-radius: 50px;
+    background: #d1e0ff;
+    box-shadow:  5px 5px 10px #b2bed9,
+                -5px -5px 10px #f0ffff;
+                
+    position: relative;
+}
+
+.nombre{
+    text-align: center;
+}
+.autor{
+    text-align: center;
+}
+
+.codigo{
+    position: absolute;
+    top: 10px;
+    left:270px;
+}
+
+
+td{
+    background-color: red;
+    width:   100%;
+    text-align: left;
+    padding: 1em 2em;
+    border: 2px solid black;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin:1em;
+    padding: 1em;
+}
+@media screen and (max-width: 890px) {
+    .discos{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+}
